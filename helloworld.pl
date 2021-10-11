@@ -1,2 +1,1 @@
-main :- write('This is sample Prolog program'),
-write('Hi!').
+main :- write('This is sample Prolog program, '), write('hi!').
