@@ -1,5 +1,7 @@
 # Ignore all
 *
+*.pdf
+*.odt
 
 # Unignore all with extensions
 !*.*
