@@ -9,8 +9,7 @@ Predicates
 
 Clauses
   read_numbers(File, Buffer, Buffer) :- eof(File), !.
-  read_numbers(File, Buffer, List):- readreal(Number), !,
-	read_numbers(File, [Number|Buffer], List).
+  read_numbers(File, Buffer, List):- readreal(Number), !, read_numbers(File, [Number|Buffer], List).
   _sum([],0).
   _sum([Head|Tail],S):- _sum(Tail, _S), S=_S+Head*Head.
 
